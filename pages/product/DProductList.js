@@ -1,5 +1,5 @@
-// src/components/ProductList.js
 import React from "react";
+import { FaShoppingCart } from "react-icons/fa"; 
 
 const products = [
   {
@@ -67,7 +67,7 @@ const DProductList = () => {
                 alt={product.name}
                 className="w-full h-48 object-cover mb-4"
               />
-              <span className="discount-badge absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded transition-transform duration-300">
+              <span className="discount-badge absolute top-2 left-2 bg-[#EE0012] text-white text-xs px-2 py-1 rounded transition-transform duration-300">
                 {product.discount}
               </span>
             </div>
@@ -78,8 +78,11 @@ const DProductList = () => {
               </span>
               <span className="text-red-600 font-bold">{product.price}</span>
             </div>
-            <button className="w-full bg-red-500 text-white py-2 rounded">
-              Order Now
+            <button className="order-now-btn w-full p-btn text-white py-2 rounded relative overflow-hidden">
+              <span className="bg-[#282828] pr-3 rounded-r-lg icon-container absolute inset-y-0 left-0 flex items-center pl-3 transform -translate-x-full transition-transform duration-300">
+                <FaShoppingCart />
+              </span>
+              <span className="text-container">Order Now</span>
             </button>
           </div>
         ))}

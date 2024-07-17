@@ -30,7 +30,7 @@ const MyComponent = () => {
   };
 
   return (
-    <Card className="h-full w-full max-w-[20rem] shadow-xl shadow-blue-gray-900/5">
+    <Card className="h-full w-full max-w-[18rem] shadow-xl shadow-blue-gray-900/5">
       <List>
         <Accordion open={open === 1}>
           <ListItem className="p-0" selected={open === 1}>

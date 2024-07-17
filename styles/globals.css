@@ -483,3 +483,23 @@ h6 {
 .discount-badge {
   transition: transform 0.3s ease, top 0.3s ease, left 0.3s ease;
 }
+
+.order-now-btn:hover .icon-container {
+  transform: translateX(0);
+}
+
+.order-now-btn:hover .text-container {
+  transform: translateX(20px);
+}
+
+.order-now-btn .icon-container {
+  transition: transform 0.3s ease;
+}
+
+.order-now-btn .text-container {
+  transition: transform 0.3s ease;
+}
+
+.p-btn {
+  background: linear-gradient(178deg, #ff0013, #c9000f);
+}

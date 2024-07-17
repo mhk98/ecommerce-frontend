@@ -88,7 +88,7 @@ const Countdown = () => {
     <div>
       <h3 className="mb-6">Upcoming Campaigns</h3>
       {/* First Campaign */}
-      <div className="grid grid-cols-2">
+      {/* <div className="grid grid-cols-2">
         <div>
           <img
             src="https://i.ibb.co/Wcfx6Dm/happyhour.png"
@@ -115,10 +115,10 @@ const Countdown = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Second Campaign */}
-      <div className="grid grid-cols-2 ">
+      {/* <div className="grid grid-cols-2 ">
         <div>
           <img src="https://i.ibb.co/47PvCvh/fashion.png" alt="" width="180" />
           <p className="font-bold text-[#fe3703]">Campaign 2 Starts In</p>
@@ -139,6 +139,56 @@ const Countdown = () => {
             <div className="time bg-[#3d444e] text-white p-2.5 rounded-md text-xl mt-2.5">
               <span>{campaign2.seconds}s</span>
             </div>
+          </div>
+        </div>
+      </div> */}
+
+      <div className="flex border rounded-lg p-4 bg-white  m-2">
+        <div className="flex-shrink-0">
+          <img
+            src="https://media.e-valy.com/cms/products/images/62155c70-3a88-4b84-b6d1-4e5e2d93f8c5?h=250&w=250"
+            alt="Poly Cotton Half Sleeve Polo For Men - White"
+            className="w-24 h-24 object-cover"
+          />
+        </div>
+        <div className="ml-4 flex flex-col justify-between">
+          <h3 className="text-sm font-semibold mb-2">
+            Poly Cotton Half Sleeve Polo For Men - White
+          </h3>
+          <div className="flex items-center justify-between mb-2">
+            <span className="text-black font-bold text-xl">550</span>
+            <span className="text-[#E00011] line-through ml-2">350</span>
+          </div>
+          <div className="flex space-x-2 text-white text-xs">
+            <div className="bg-[#E00011] px-2 py-1 rounded">2D</div>
+            <div className="bg-[#E00011] px-2 py-1 rounded">02</div>
+            <div className="bg-[#E00011] px-2 py-1 rounded">35</div>
+            <div className="bg-[#E00011] px-2 py-1 rounded">55</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex border rounded-lg p-4 bg-white m-2">
+        <div className="flex-shrink-0">
+          <img
+            src="https://static-01.daraz.com.bd/p/4b087baf611e81716545d146e7cf4fdc.jpg_200x200q80-product.jpg_.webp"
+            alt="Poly Cotton Half Sleeve Polo For Men - White"
+            className="w-24 h-24 object-cover"
+          />
+        </div>
+        <div className="ml-4 flex flex-col justify-between">
+          <h3 className="text-sm font-semibold mb-2">
+            Poly Cotton Half Sleeve Polo For Men - White
+          </h3>
+          <div className="flex items-center justify-between mb-2">
+            <span className="text-black font-bold text-xl">550</span>
+            <span className="text-[#E00011] line-through ml-2">350</span>
+          </div>
+          <div className="flex space-x-2 text-white text-xs">
+            <div className="bg-[#E00011] px-2 py-1 rounded">2D</div>
+            <div className="bg-[#E00011] px-2 py-1 rounded">02</div>
+            <div className="bg-[#E00011] px-2 py-1 rounded">35</div>
+            <div className="bg-[#E00011] px-2 py-1 rounded">55</div>
           </div>
         </div>
       </div>
