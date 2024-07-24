@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaShoppingCart } from "react-icons/fa";
+import Link from "next/link";
 
 const products = [
   {
@@ -126,7 +127,9 @@ const ProductsList = () => {
               <span className="bg-[#282828] pr-3 rounded-r-lg icon-container absolute inset-y-0 left-0 flex items-center pl-3 transform -translate-x-full transition-transform duration-300">
                 <FaShoppingCart />
               </span>
-              <span className="text-container">Order Now</span>
+              <span className="text-container">
+                <a href="product-details">Order Now</a>
+              </span>
             </button>
           </div>
         ))}

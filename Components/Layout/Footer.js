@@ -252,8 +252,8 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-8 mt-4">
-      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div>
+      <div className="container mx-auto px-4 hidden lg:flex justify-between gap-8">
+        <div className="w-72">
           <h2 className="text-2xl font-bold mb-2">
             <span className="text-white">evaly</span>
           </h2>
@@ -339,23 +339,34 @@ const Footer = () => {
           <h3 className="font-semibold mb-2">
             <span className="text-white">Get Evaly App</span>
           </h3>
-          <div className="flex space-x-4">
-            <a href="#" aria-label="Google Play Store">
-              <img
-                src="path/to/google-play.png"
-                alt="Get it on Google Play"
-                className="h-12"
-              />
-            </a>
-            <a href="#" aria-label="Apple App Store">
-              <img
-                src="path/to/app-store.png"
-                alt="Download on the App Store"
-                className="h-12"
-              />
-            </a>
+          <div className=" ">
+            <div>
+              <a href="#" aria-label="Google Play Store">
+                <img
+                  src="path/to/google-play.png"
+                  alt="Get it on Google Play"
+                  className="h-12"
+                />
+              </a>
+            </div>
+            <div>
+              <a href="#" aria-label="Apple App Store">
+                <img
+                  src="path/to/app-store.png"
+                  alt="Download on the App Store"
+                  className="h-12"
+                />
+              </a>
+            </div>
           </div>
         </div>
+      </div>
+
+      <div className="container  lg:hidden gap-8">
+        <p>
+          House #8, Road #14, Dhanmondi, Dhaka-1209. Email: support@e-valy.com.
+          Mobile:+8801454512112
+        </p>
       </div>
       <div className="text-center mt-8 text-gray-400">
         <small>© 2024 E-valy.com Limited. All rights reserved.</small>

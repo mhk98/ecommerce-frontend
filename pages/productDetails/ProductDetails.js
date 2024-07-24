@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { BiSolidRightArrow } from "react-icons/bi";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaHome, FaWhatsapp } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
+import MainProductDescription from "../productDescription/MainProductDescription";
+import { MdOutlineZoomIn, MdOutlineZoomOut } from "react-icons/md";
 
 const ProductDetails = () => {
   const [selectedImage, setSelectedImage] = useState(
@@ -26,6 +28,9 @@ const ProductDetails = () => {
 
   return (
     <div className="container mx-auto p-4">
+      <p className="flex text-gray-500">
+        <FaHome /> <span>/ Groceries / Cooking / Ingredients</span>
+      </p>
       <div className="grid lg:grid-cols-2 grid-cols-1 bg-white overflow-hidden">
         <div className="flex max-w-xl max-h-lg md:w-1/2 p-4 relative">
           <img
@@ -34,44 +39,18 @@ const ProductDetails = () => {
             className="max-w-md p-2 border shadow rounded-lg h-full object-cover"
             style={{ transform: `scale(${zoomLevel})` }}
           />
-          <div className="absolute top-6 left-96 flex flex-col space-y-2">
+          <div className="absolute top-8 left-96 flex flex-col space-y-2">
             <button
-              className="bg-white rounded-full p-2 shadow"
+              className="bg-white rounded-lg p-2 shadow"
               onClick={handleZoomIn}
             >
-              <svg
-                className="w-6 h-6 text-gray-800"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M12 4v16m8-8H4"
-                ></path>
-              </svg>
+              <MdOutlineZoomIn size={22} className="text-[#D40010]" />
             </button>
             <button
-              className="bg-white rounded-full p-2 shadow"
+              className="bg-white rounded-lg p-2 shadow"
               onClick={handleZoomOut}
             >
-              <svg
-                className="w-6 h-6 text-gray-800"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M20 12H4"
-                ></path>
-              </svg>
+              <MdOutlineZoomOut size={22} className="text-[#D40010]" />
             </button>
           </div>
           <div className="ml-4">
@@ -162,6 +141,14 @@ const ProductDetails = () => {
             </button>
           </div>
         </div>
+      </div>
+
+      <MainProductDescription />
+
+      <div className="border border-gray-300 h-16 p-2">
+        <h3 className="font-bold border-b border-gray-300 pb-1">
+          Similar Products :
+        </h3>
       </div>
     </div>
   );
