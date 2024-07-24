@@ -43,7 +43,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="container  lg:hidden flex-col md:flex-row justify-center px-4 py-2 space-y-2 md:space-y-0">
+      <div className="container  lg:hidden flex-col md:flex-row justify-center  px-4 py-2 space-y-2 md:space-y-0">
         <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4">
           <div className="flex items-center space-x-2">
             <FaEnvelope />
@@ -54,7 +54,7 @@ const Header = () => {
             <small>+8801601872740</small>
           </div>
         </div>
-        <div className="flex items-center space-x-2">
+        <div className="flex ml-12 items-center space-x-2">
           <a href="#" className="text-white hover:text-gray-400">
             <FaFacebookF />
           </a>
