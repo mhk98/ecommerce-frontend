@@ -54,7 +54,7 @@ const Header = () => {
             <small>+8801601872740</small>
           </div>
         </div>
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-2">
           <a href="#" className="text-white hover:text-gray-400">
             <FaFacebookF />
           </a>
