@@ -92,7 +92,7 @@ const ShopList = () => {
     <div className="bg-black text-white p-8">
       <div className="flex justify-between items-center mb-4">
         <p className="text-xl">
-          <span className="text-white">Products</span>
+          <span className="text-white">Shops</span>
         </p>
         <button className="bg-gray-700 text-white py-2 px-4 rounded-lg">
           Show more
