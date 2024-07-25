@@ -43,8 +43,8 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="container  lg:hidden flex-col md:flex-row justify-center  px-4 py-2 space-y-2 md:space-y-0">
-        <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4">
+      <div className="container  lg:hidden xl:hidden flex-col justify-center items-center py-2 space-y-2 ">
+        <div className="flex flex-col items-center space-y-2">
           <div className="flex items-center space-x-2">
             <FaEnvelope />
             <small>support@medleybiz.com.bd</small>
@@ -53,24 +53,24 @@ const Header = () => {
             <FaWhatsapp />
             <small>+8801601872740</small>
           </div>
-        </div>
-        <div className="flex ml-8 items-center space-x-2">
-          <a href="#" className="text-white hover:text-gray-400">
-            <FaFacebookF />
-          </a>
-          <a href="#" className="text-white hover:text-gray-400">
-            <FaTwitter />
-          </a>
-          <a href="#" className="text-white hover:text-gray-400">
-            <FaLinkedinIn />
-          </a>
-          <a href="#" className="text-white hover:text-gray-400">
-            <FaPinterestP />
-          </a>
-          <button className="bg-red-600 text-white px-4 py-2 rounded-full flex items-center space-x-2">
-            <FaUser />
-            <small>Login</small>
-          </button>
+          <div className="flex  items-center space-x-2">
+            <a href="#" className="text-white hover:text-gray-400">
+              <FaFacebookF />
+            </a>
+            <a href="#" className="text-white hover:text-gray-400">
+              <FaTwitter />
+            </a>
+            <a href="#" className="text-white hover:text-gray-400">
+              <FaLinkedinIn />
+            </a>
+            <a href="#" className="text-white hover:text-gray-400">
+              <FaPinterestP />
+            </a>
+            <button className="bg-red-600 text-white px-4 py-2 rounded-full flex items-center space-x-2">
+              <FaUser />
+              <small>Login</small>
+            </button>
+          </div>
         </div>
       </div>
     </div>
