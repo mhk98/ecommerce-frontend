@@ -105,11 +105,11 @@ const MainProductDescription = () => {
         </div>
       </div>
       <div className=" justify-between flex-col lg:hidden xl:hidden ">
-        <div className=" border border-gray-300 p-3" style={{ width: "840px" }}>
+        <div className=" border border-gray-300 p-3">
           <div className="mb-2 rounded-lg">
             <button
               className={`bg-gray-300 rounded-lg py-1 px-2 ${
-                activeButton === 0 ? "active" : ""
+                activeButton === 0 ? "p-btn text-white" : ""
               }`}
               onClick={() => handleButtonClick(0)}
             >
@@ -118,7 +118,7 @@ const MainProductDescription = () => {
 
             <button
               className={`bg-gray-300 rounded-lg py-1 px-2 ml-2 ${
-                activeButton === 1 ? "active" : ""
+                activeButton === 1 ? "p-btn text-white" : ""
               }`}
               onClick={() => handleButtonClick(1)}
             >
@@ -127,7 +127,7 @@ const MainProductDescription = () => {
 
             <button
               className={`bg-gray-300 rounded-lg py-1 px-2 ml-2 ${
-                activeButton === 2 ? "active" : ""
+                activeButton === 2 ? "p-btn text-white" : ""
               }`}
               onClick={() => handleButtonClick(2)}
             >
@@ -135,7 +135,7 @@ const MainProductDescription = () => {
             </button>
             <button
               className={`bg-gray-300 rounded-lg py-1 px-2 ml-2 ${
-                activeButton === 3 ? "active" : ""
+                activeButton === 3 ? "p-btn text-white" : ""
               }`}
               onClick={() => handleButtonClick(3)}
             >
@@ -151,7 +151,7 @@ const MainProductDescription = () => {
           </div>
         </div>
 
-        <div className="w-96 p-4 bg-white border border-gray-300 shadow-lg rounded-lg">
+        <div className=" p-4 bg-white border border-gray-300 shadow-lg rounded-lg">
           <div className="w-full h-56 bg-gray-200 flex items-center justify-center">
             <iframe
               width="560"
